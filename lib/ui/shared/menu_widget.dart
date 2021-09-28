@@ -48,6 +48,20 @@ class _TableDesktopMenu extends StatelessWidget {
             //onPressedW: () => Navigator.pushNamed(context, '/404'),
             //onPressedW: () => navigationService.navigateTo('/abc123'),
           ),
+          SizedBox(width: 10),
+          ButtomWidget(
+            textW: 'Stateful 100',
+            colorW: Colors.black,
+            onPressedW: () =>
+                locator<NavigationService>().navigateTo('/stateful/100'),
+          ),
+          SizedBox(width: 10),
+          ButtomWidget(
+            textW: 'Provider 200',
+            colorW: Colors.black,
+            onPressedW: () =>
+                locator<NavigationService>().navigateTo('/provider?q=200'),
+          ),
         ],
       ),
     );
@@ -81,6 +95,20 @@ class _MobileMenu extends StatelessWidget {
             colorW: Colors.black,
             onPressedW: () =>
                 locator<NavigationService>().navigateTo('/abc123'),
+          ),
+          SizedBox(width: 10),
+          ButtomWidget(
+            textW: 'Stateful 100',
+            colorW: Colors.black,
+            onPressedW: () =>
+                locator<NavigationService>().navigateTo('/stateful/100'),
+          ),
+          SizedBox(width: 10),
+          ButtomWidget(
+            textW: 'Provider 200',
+            colorW: Colors.black,
+            onPressedW: () =>
+                locator<NavigationService>().navigateTo('/provider?q=200'),
           ),
         ],
       ),

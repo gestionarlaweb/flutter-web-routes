@@ -1,14 +1,16 @@
 import 'package:bases_web/provider/counter_provider.dart';
 import 'package:bases_web/ui/shared/buttom_widget.dart';
-import 'package:bases_web/ui/shared/menu_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class CounterProviderView extends StatelessWidget {
+  final String base;
+  const CounterProviderView({Key? key, required this.base}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (_) => CounterProvider(),
+      create: (_) => CounterProvider(this.base),
       child: _CounterProviderPageBody(),
     );
   }
@@ -21,8 +23,6 @@ class _CounterProviderPageBody extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        MenuWidget(),
-        Spacer(),
         Text(
           'Contador Provider',
           style: TextStyle(fontSize: 20),

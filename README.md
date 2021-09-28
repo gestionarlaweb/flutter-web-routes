@@ -7,3 +7,5 @@ Rutas con Flutter Web
 https://flutter.dev/docs/development/ui/navigation
 
 - [Paquete Fluro](https://pub.dev/packages/fluro)
+
+![Screenshot](/assets/images/giphy.gif)

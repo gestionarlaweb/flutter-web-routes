@@ -15,7 +15,7 @@ class View404 extends StatelessWidget {
           ButtomWidget(
             textW: 'Regresar',
             onPressedW: () => Navigator.pushNamed(context, '/stateful'),
-            colorW: Colors.black,
+            colorW: Colors.yellow,
           ),
         ],
       ),
